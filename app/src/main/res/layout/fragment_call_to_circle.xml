@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.medcada.android.fragment.CallToCircleFragment">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_alignParentStart="true">
+    <Button
+        android:drawablePadding="-20dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ico_emergency_new"
+
+        android:id="@+id/btn_makeCallToPolice"
+        android:layout_margin="15dp"
+        android:textColor="#F03F33"
+        android:text="CALL 911"
+        android:background="@drawable/circular_background_rd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_sendSMS"
+        android:layout_margin="15dp"
+        android:textColor="#ffc400"
+        android:drawablePadding="-20dp"
+     android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ico_send_sms_to_group"
+        android:text="Text Circle"
+        android:background="@drawable/circular_background_ylw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_makeCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/circular_background_org"
+        android:drawableLeft="@drawable/ico_call_to_group"
+        android:drawablePadding="-20dp"
+        android:paddingLeft="10dp"
+        android:text="CALL Circle "
+        android:textColor="#e67e22" />
+
+    <Button
+        android:drawablePadding="-20dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ico_location_new"
+        android:id="@+id/btn_mylocation"
+        android:layout_margin="15dp"
+        android:textColor="#2ecc71"
+        android:text="My Location "
+        android:background="@drawable/circular_background_gr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:drawablePadding="-20dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ico_home"
+        android:id="@+id/btn_takeMeHome"
+        android:layout_margin="15dp"
+        android:textColor="#16a085"
+        android:text="Take Me Home"
+        android:background="@drawable/circular_background_gr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+</RelativeLayout>

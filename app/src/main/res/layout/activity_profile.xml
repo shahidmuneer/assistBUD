@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/helloactivity_mainframe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="org.medcada.android.activity.HelloActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:background="@color/glucosio_pink"
+            android:gravity="bottom"
+            android:minHeight="?android:attr/actionBarSize"
+            android:paddingBottom="16dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextAppearance="@style/Toolbar.WhiteText" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/done_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/activity_main_toolbar"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-32dp"
+            android:layout_marginRight="20dp"
+            android:onClick="onFabClicked"
+            app:backgroundTint="@color/glucosio_accent"
+            app:srcCompat="@drawable/ic_done_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_toolbar"
+            android:orientation="vertical"
+            android:paddingBottom="32dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/activity_pro_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="First Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/abc_text_size_body_2_material" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/activity_pro_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Last Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/abc_text_size_body_2_material" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/activity_pro_ad1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Street Address#1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/abc_text_size_body_2_material" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/activity_pro_ad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Street Address#2"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/abc_text_size_body_2_material" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:editable="false"
+
+                    android:id="@+id/activity_my_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Click to choose My Place"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:textSize="@dimen/abc_text_size_body_2_material" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/activity_pro_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="City"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/abc_text_size_body_2_material" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/activity_pro_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="State"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/abc_text_size_body_2_material" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/activity_pro_zip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="ZIP (Postal Code)"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/abc_text_size_body_2_material" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/activity_pro_llname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Last Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/abc_text_size_body_2_material" />
+                </android.support.design.widget.TextInputLayout>
+                <org.medcada.android.tools.LabelledSpinner
+                    android:id="@+id/activity_hello_spinner_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    custom:labelText="@string/helloactivity_country"
+                    custom:widgetColor="@color/glucosio_pink" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+
+
+                <org.medcada.android.tools.LabelledSpinner
+                    android:id="@+id/activity_hello_spinner_blood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    custom:labelText="Blood Type"
+                    custom:widgetColor="@color/glucosio_pink" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/glucosio_pink"
+                    android:text="Medical Conditions(s)"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:id="@+id/conditon_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/activity_pro_condition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Medical Condition#1"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textSize="@dimen/abc_text_size_body_2_material" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="3"
+                        android:gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/add_condition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+
+
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_add_black_24dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/medicalid_txtView"
+                        fontPath="fonts/lato-bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="16dp"
+                        android:text="Insurance Company Medical ID#: "
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/medicalid_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="10dp"
+                            android:src="@drawable/ico_camera" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/insuranceImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/compatSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PIN Code Lock"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Just a 4 digit PIN code to lock your profile"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:id="@+id/et_passcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0000"
+
+                        android:letterSpacing="0.5"
+                        android:maxLength="4"
+                        android:inputType="number"
+                        android:textSize="30sp" />
+
+                    <com.mukesh.OtpView
+                        android:visibility="gone"
+                        android:id="@+id/otp_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:showDividers="middle"
+                        android:inputType="number"
+
+                        android:textColor="#333"
+                        app:otp="0000"></com.mukesh.OtpView>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

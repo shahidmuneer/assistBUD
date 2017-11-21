@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context="org.medcada.android.fragment.CallToPoliceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please enter Emergency number your nearest police station." />
+            <!-- TODO: Update blank fragment layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/text"
+                android:layout_marginTop="20dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til"
+                    android:layout_width="match_parent"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/etContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="0123456789"
+                        android:hint="Police Contact"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="@dimen/abc_text_size_body_2_material" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/et_emergency_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="top"
+                        android:hint="Enter Emergency message"
+                        android:lineSpacingExtra="10dp"
+                        android:lines="4"
+                        android:minLines="4"
+
+                        android:singleLine="false"
+
+                        android:textSize="@dimen/abc_text_size_body_2_material" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sw_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Include Location in SMS"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/done_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+android:layout_margin="15dp"
+        app:backgroundTint="@color/glucosio_accent"
+        app:srcCompat="@drawable/ic_done_black_24dp" />
+
+</RelativeLayout>

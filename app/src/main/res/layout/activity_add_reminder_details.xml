@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.medcada.android.activity.AddReminderDetailsActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/glucosio_pink"
+
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/Toolbar.WhiteText" />
+
+    <LinearLayout
+        android:layout_below="@+id/activity_main_toolbar"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/et_reminderName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+
+                android:textSize="22sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/cont_doc_sp"
+            android:gravity="center"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:padding="10dp"
+                android:src="@drawable/ico_select"
+                android:tint="#7f8c8d" />
+
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:layout_weight=".5"
+                android:tag="0"
+                android:textSize="18sp"
+                android:text="[ Tap to select doctor ]"
+                android:id="@+id/tv_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:tint="#7f8c8d"
+                android:padding="10dp"
+                android:src="@drawable/ico_clock"
+                android:layout_weight="3.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:tag="0"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:text="[ Tap to select time ]"
+                android:layout_weight=".5"
+                android:id="@+id/et_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:tint="#7f8c8d"
+                android:padding="10dp"
+                android:src="@drawable/ico_reminder"
+                android:layout_weight="3.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/sp_timing"
+                android:layout_weight=".5"
+                android:entries="@array/reminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_weight=".5"
+                android:text="No Reminder"
+                android:id="@+id/tv_reminder"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cont_locaction"
+            android:gravity="center"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:tint="#7f8c8d"
+                android:padding="10dp"
+                android:src="@drawable/ico_location"
+                android:layout_weight="3.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginLeft="25dp"
+                android:layout_weight=".5"
+                android:id="@+id/et_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:tint="#7f8c8d"
+                android:padding="10dp"
+                android:src="@drawable/ico_note"
+                android:layout_weight="3.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginLeft="25dp"
+                android:layout_weight=".5"
+                android:id="@+id/et_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

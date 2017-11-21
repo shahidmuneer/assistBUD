@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.medcada.android.activity.PolicyStatementActivity">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_policy_title"
+        android:textColor="@color/glucosio_pink"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="1.5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <TextView
+        android:layout_below="@+id/tv_policy_title"
+        android:id="@+id/tv_policy"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:lineSpacingExtra="1.5sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""/>
+    <Button
+        android:id="@+id/btn_accept"
+        android:background="@drawable/circular_background"
+        android:text="Allow Permission"
+        android:layout_marginBottom="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

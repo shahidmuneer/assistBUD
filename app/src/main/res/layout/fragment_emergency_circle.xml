@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="org.medcada.android.fragment.EmergencyCircleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <ListView
+        android:id="@+id/lv_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/til"></ListView>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_add_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:onClick="addNewGlucoseReading"
+        android:src="@drawable/ico_add_call"
+        app:fab_colorNormal="@color/glucosio_accent"
+        app:fab_colorPressed="@color/glucosio_accent"
+        app:fab_colorRipple="#99FFFFFF"
+        app:fab_size="normal" />
+
+</RelativeLayout>

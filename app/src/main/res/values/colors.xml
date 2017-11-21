@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2016 Glucosio Foundation
+  ~
+  ~ This file is part of Glucosio.
+  ~
+  ~ Glucosio is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, version 3.
+  ~
+  ~ Glucosio is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Glucosio.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~
+  -->
+
+<resources>
+    <color name="white">#FFFFFF</color>
+
+    <color name="glucosio_pink">#00b0b9</color>
+    <color name="glucosio_pink_light">#03d6e1</color>
+    <color name="glucosio_pink_graph_2">#99FCE2EA</color>
+    <color name="glucosio_pink_graph_1">#80FCE2EA</color>
+    <color name="glucosio_pink_dark">#08a4ac</color>
+    <color name="glucosio_accent">#00b0b9</color>
+    <color name="glucosio_fab_glucose">#53bec4</color>
+    <color name="glucosio_fab_HB1AC">#02a1a9</color>
+    <color name="glucosio_fab_cholesterol">#E7B85D</color>
+    <color name="glucosio_fab_pressure">#749756</color>
+    <color name="glucosio_fab_ketones">#4B8DDB</color>
+    <color name="glucosio_fab_weight">#6F4EAB</color>
+    <color name="glucosio_separator">#eaeaea</color>
+    <color name="glucosio_gray_light">#D1D1D1</color>
+    <color name="glucosio_text">#323232</color>
+    <color name="glucosio_text_dark">#000000</color>
+    <color name="glucosio_text_light">#686E71</color>
+    <color name="glucosio_text_green">#46a644</color>
+    <color name="glucosio_light_grey_background">#F9F9F9</color>
+    <color name="glucosio_grey_action_icon">#7c7c7c</color>
+    <color name="mdtp_accent_color">@color/glucosio_pink</color>
+    <color name="mdtp_accent_color_dark">@color/glucosio_pink_dark</color>
+    <color name="glucosio_reading_ok">#749756</color>
+    <color name="glucosio_reading_hyper">#13a8af</color>
+    <color name="glucosio_reading_low">#4B8DDB</color>
+    <color name="glucosio_reading_high">#E7B85D</color>
+    <color name="glucosio_reading_hypo">#6F4EAB</color>
+<array name="my_colors">
+    <item>@android:color/white</item>
+    <item>#D2B48C</item>
+    <item>#FF0000</item>
+    <item>#FFC0CB</item>
+    <item>#FFDAB9</item>
+    <item>#8B4513</item>
+    <item>#FFA500</item>
+    <item>#FFFF00</item>
+    <item>#008000</item>
+    <item>#40E0D0</item>
+    <item>#1E90FF</item>
+    <item>#800080</item>
+</array>
+</resources>
